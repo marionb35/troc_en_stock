@@ -1,0 +1,84 @@
+#contact {
+    background: url('../images/contact_img.jpg') no-repeat;
+    background-size: cover;
+
+
+    h3,
+    h4 {
+        color: $white;
+        text-align: center;
+        text-shadow: 1px 1px 1px #00000069;
+    }
+
+    .cadre-form {
+        background-color: rgba(255, 255, 255, 0.543);
+        margin: 50px auto;
+        padding: 20px auto;
+    }
+
+    .cadre-form .container {
+        display: block;
+
+    }
+
+    .formulaire {
+        display: inline-block;
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .colonne6 {
+        flex-basis: 100%;
+        padding: 20px 5px;
+        @media (min-width:$bp-large){
+            flex-basis: 50%;
+        }
+    }
+
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        width: 100%;
+        
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        padding-left: 5px;
+    }
+
+    .contact-form select {
+        background-color: #fff;
+        border: none;
+        border-radius: 0;
+    }
+
+    .contact-form textarea {
+        margin: 5px;
+        padding: 20px 5px;
+    }
+
+    .contact-form button[type="submit"] {
+        @include bouton($pink,$white) ;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 40px auto 10px;
+        align-self: center;
+
+        &:hover{
+            @include bouton($white,$pink) ;
+            border-radius: 50%;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,76 @@
+#carousel{
+    // position: relative;
+    padding: 0 0;
+}
+
+
+
+#carousel .item{
+    max-height: 500px;
+}
+
+#carousel .item h2{
+    position: absolute;
+    top:40px;
+    left: 10%;
+    color: $white;
+}
+
+.owl-carousel .owl-nav {
+    button {
+        position: absolute;
+        top: calc(50% - 1.5rem);
+
+        &::before {
+            display: inline-block;
+            font-family: 'Font Awesome 5 Free';
+            font-size: 3rem;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        &.owl-next::before {
+            content: '\f105';
+        }
+
+        &.owl-prev::before {
+            content: '\f104';
+        }
+
+        &.owl-prev {
+            left: 15px;
+            font-size: 0;
+        }
+
+        &.owl-next {
+            right: 15px;
+            font-size: 0;
+        }
+
+    }
+}
+
+.owl-carousel .owl-dots{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    z-index:50;
+
+    .owl-dot{
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 2px;
+        background-color: rgba(255, 255, 255, 0.502);
+    }
+    .active{
+        background-color: rgba(255, 255, 255, 0.92);
+    }
+}
+
+.owl-carousel .cta{
+    position: absolute;
+    bottom: 100px;
+    left: calc(50% - 2em);
+}

@@ -1,0 +1,44 @@
+footer {
+    background-color: $almond;
+    color: $pink;
+    padding: 40px;
+    text-align: center;
+}
+footer a {
+    color: $pink;
+}
+.footer-logo,
+.footer-legales,
+.nav.social-nav {
+    border-bottom: solid 1px $pink;
+    margin: 40px 0 60px;
+    @media (min-width: $bp-medium) {
+        border-bottom: none;
+    }
+}
+.footer-logo img{
+    margin: 0 auto;
+}
+.social-nav li a {
+    font-size: 0;
+}
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-instagram {
+    font-size: 3rem;
+}
+.social-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.social-nav li {
+    margin: 1rem;
+}
+footer .container {
+    @media (min-width: $bp-medium) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

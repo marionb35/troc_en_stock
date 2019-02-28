@@ -1,0 +1,22 @@
+body {
+    font-family: $font-default
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-title;
+    margin: 0;
+}
+
+section h2{
+    text-align: center;
+}
+
+.home h1{
+    font-size: 0;
+}
+
+.hidden{
+    font-size: 0;
+}

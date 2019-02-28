@@ -1,0 +1,10 @@
+@mixin bouton($bg-bouton,$color-bouton) {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: $bg-bouton;
+    color: $color-bouton;
+    border: solid 5px $bg-bouton;
+    box-shadow:inset 0px 0px 0px 2px $color-bouton;
+    padding: .5em 1em;
+    text-align: center;
+  }

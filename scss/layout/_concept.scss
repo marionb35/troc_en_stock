@@ -1,0 +1,36 @@
+#concept{
+    background-color: $pink;
+    color: $white;
+}
+
+#concept .container{
+    display: flex;
+    flex-direction: column;
+}
+
+#concept h2{
+    margin-bottom: 1.5em;
+}
+
+.concept-contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media (min-width: $bp-small) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    margin: 40px 0;
+}
+
+.icon-kirppis{
+    width: 100%;
+    height: auto;
+}
+
+#concept .cta{
+    @include bouton($white,$pink) ;
+    margin: 0 auto;
+    align-self: center;
+}
